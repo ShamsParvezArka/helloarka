@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blogpost</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script src="src/main.js"></script>
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="banner">
+        <img class="banner_image" src="../asset/banner.png" />
+      </div>
+      <div class="about">
+        <h4><b>Productivity boost with Powershell</b></h4>
+        <p>
+          Hello, world!<br />
+          [TODO] write some things here
+        </p>
+        <h5>Pre-requirements</h5>
+        <ul>
+          <li>
+            Install windows package manager:
+            <a
+              href="https://learn.microsoft.com/en-us/windows/package-manager/winget/"
+              >Winget</a
+            >
+          </li>
+          <li>
+            Install the latest Powershell:
+            <a
+              href="https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4"
+              >Powershell 7</a
+            >
+          </li>
+          <li>
+            Install fuzzy finder:
+            <a href="https://github.com/junegunn/fzf">fzf</a>
+          </li>
+        </ul>
+        <h5><b>Discovering some puzzle pieces</b></h5>
+        <p>
+          First things first, let's discover some puzzle pieces and then join
+          them one by one to make a full picture.
+        </p>
+        <h5>Cmdlet</h5>
+        <p>
+          Cmdlets are native PowerShell commands, not stand-alone executables.
+          Cmdlets are collected into PowerShell modules that can be loaded on
+          demand. PowerShell uses a <it>Verb-Noun</it> name pair to name.
+          cmdlets. For example, the <code>Get-Command</code> cmdlet included in
+          PowerShell is used to get all the cmdlets that are registered in the
+          command shell.
+        </p>
+        <h5>Powershell Output Type</h5>
+        <p>
+          Unlike bash(or any shell included in Linux or Unix like os),
+          Powershell doesn't just returns plain text as a output but as an
+          object. These objects backend relies on C# or .NET Framework. So when
+          we are doing pipeline operations we are passing objects one to
+          another. For example, <code>Get-ChildItem</code> cmdlet will give us 
+          an object that holds all info about current directory and this object 
+          has 4 properties: Mode, LastWriteTime, Length and Name. 
+        </p>
+        <h5>Pipeline</h5>
+        <p>
+          A pipeline is a series of commands connected by pipeline operators
+          (|). Each pipeline operator sends the results of the preceding command
+          to the next command.
+        </p>
+        <h5><b>Assembling a Powerscript</b></h5>
+        
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+	"experties": [
+    "I can speak in C/C++, Lua, GDScript",
+    "Graphics library: OpenGL, SDL2, Raylib",
+    "Game engine: Godot",
+    "Operating system: Linux, Windows"
+  ], 
+
+  "archives": [
+    {
+      "title": "[2024-06-27] Productivity boost with Powershell",
+      "link": "archive/powerscript.html"
+    }
+  ]
+}
